@@ -1,0 +1,138 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Poppins" ,sans-serif;
+}
+body{
+    background-color: #3d64e6;
+    
+}
+.container{
+    background-color: #ffffff;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.7em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left:50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 1);
+}
+.search-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+
+}
+.search-wrapper button{
+font-size: 1em;
+background-color: #3d64e6;
+color: #ffffff;
+padding: 0.8em 0;
+border: none;
+border-radius: 1.5em;
+}
+.search-wrapper input{
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    color: #222a43;
+}
+#result{
+    margin-top: 1.25em;
+}
+.container  .flag-img{
+    display: block;
+    width: 45%;
+    min-width: 7.3em;
+    margin: 1.8em auto 1.2em auto;
+}
+.container h2{
+    font-weight: 600;
+    color:#222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    margin-bottom: 1.8em;
+}
+.data-wrapper{
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+
+}
+.container h4{
+    display: inline;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+
+}
+.container span {
+    color: #5d6274;
+    font-size: 20px;
+}
+.container h3{
+    text-align: center;
+    color: red;
+}
+
+/* MEDIA SCREEN */
+
+
+
+
+/* Stilet për ekrane të mëdha dhe të vogla (maksimum 768px) */
+.container {
+    width: 90vw; /* Ndryshoni width në 90vw për ekrane të mëdha dhe të vogla */
+    max-width: 37.5em;
+    padding: 2em 1.5em; /* Ndryshoni padding sipas dëshirës */
+}
+
+.search-wrapper {
+    grid-template-columns: 7fr 1fr; /* Ndryshoni kolonat sipas dëshirës */
+}
+
+.search-wrapper button {
+    font-size: 0.8em; /* Ndryshoni font-size sipas dëshirës */
+    padding: 0.6em 0.8em; /* Ndryshoni padding sipas dëshirës */
+}
+
+.search-wrapper input {
+    font-size: 1em; /* Ndryshoni font-size sipas dëshirës */
+    padding: 10px;
+    text-align: center;
+}
+
+.container .flag-img {
+    width: 35%; /* Ndryshoni width sipas dëshirës */
+    min-width: 5em; /* Ndryshoni min-width sipas dëshirës */
+}
+
+.container h2 {
+    font-size: 1.2em; /* Ndryshoni font-size sipas dëshirës */
+}
+
+/* Media query për ekrane të mëdha dhe të vogla (maksimum 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80vw; /* Ndryshoni width sipas dëshirës */
+        padding: 3em 2.7em; /* Ndryshoni padding sipas dëshirës */
+    }
+
+    .search-wrapper {
+        grid-template-columns: 1fr; /* Vendos një kolonë për kërkuesin */
+        gap: 1em; /* Ndryshoni gap sipas dëshirës */
+    }
+
+    .search-wrapper button {
+        font-size: 1em; /* Kthehuni te madhësia e paracaktuar */
+        padding: 0.8em 0; /* Kthehuni te madhësia e paracaktuar */
+        width: 100%; /* Mbushni të gjithë width e kërkuesit */
+    }
+}
